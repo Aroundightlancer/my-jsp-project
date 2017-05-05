@@ -1,0 +1,139 @@
+/********************全局设置******************/
+ul, li{
+    margin:0;
+    padding: 0;
+}
+.container{
+    display: flex;
+}
+/*左边二级菜单*/
+.left-sidebar{
+    min-width: 200px;
+    flex:1;
+}
+/*二级菜单主要内容*/
+.sidebar-content{
+    width: 200px;
+    min-height: 768px;
+    color: #acb5bf;
+    background: #203140;
+}
+/*列表*/
+.sidebar-nav{
+    list-style: none;
+}
+/********************折叠菜单******************/
+/*折叠菜单*/
+.sidebar-separator {
+    padding: 5px;
+    text-align: center;
+    background:#4a5064;
+    cursor: pointer;
+}
+/*折叠菜单图标*/
+.sidebar-separator i {
+    opacity: .5;
+    color: white;
+}
+/********************列表******************/
+/*列表图标*/
+.sidebar-nav a > .sidebar-nav-indicator {
+    line-height: inherit;
+    margin-left: 4px;
+    -webkit-transition: -webkit-transform .15s ease-out;
+    transition: transform .15s ease-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+/*列表标题*/
+.sidebar-nav a {
+    display: block;
+    padding-left: 15px;
+    color: #acb5bf;
+    min-height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    font-family: "Microsoft YaHei";
+}
+/*列表项*/
+.child-nav a{
+    padding-left: 45px;
+}
+/*列表链接下划线去除*/
+.sidebar-nav a:link{
+    text-decoration: none;
+}
+/*列表链接悬浮样式*/
+.sidebar-nav a:hover,
+.sidebar-nav a:focus{
+    color: #ffffff;
+    text-decoration: none;
+}
+/*列表标题展开时样式*/
+.sidebar-nav a.open {
+    background: #42485b;
+    color: white;
+}
+/*列表标题合上时样式*/
+.sidebar-nav a.close{
+    background: #42485b;
+    color: #acb5bf;
+}
+/*列表项展开时样式*/
+.sidebar-nav ul.open{
+    display: block;
+    -webkit-transition: background .25s ease-out;
+    transition: background .25s ease-out;
+}
+/*列表项关闭时样式*/
+.sidebar-nav ul.close {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    -webkit-transition: background .25s ease-out;
+    transition: background .25s ease-out;
+}
+/*列表项子菜单样式*/
+.sidebar-nav ul a {
+    min-height: 34px;
+    line-height: 34px;
+    font-weight: normal;
+}
+/*列表项子菜单选中样式*/
+.sidebar-nav ul a.active{
+    background: #4bb0a5;
+    color: white;
+}
+
+/********************二级菜单点击动画******************/
+.sidebar-nav-ripple {
+    display: block;
+    position: absolute;
+    background: rgba(92, 205, 222, .3);
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.sidebar-nav-ripple.animate {
+    -webkit-animation: ripple 1s ease-out;
+    animation: ripple 1s ease-out;
+}
+@-webkit-keyframes ripple {
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(3);
+    }
+}
+
+@keyframes ripple {
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(3);
+        transform: scale(3);
+    }
+}

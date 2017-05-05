@@ -1,0 +1,113 @@
+/********************鍏ㄥ眬璁剧疆******************/
+body{
+    margin: 0;
+    background-color: #EEEEEE;
+    min-height: 768px;
+}
+.nav{
+    background-color: #4bb0a5;
+}
+
+/********************宸﹁竟鍖哄煙******************/
+.nav-img{
+    margin-top: 10px;
+    margin-left: 30px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+/*logo璁剧疆*/
+.nav img{
+    width:50px;
+    height: 50px;
+    border: 4px solid #eef0f1;
+    border-radius: 50%;
+    display: inline-block;
+    float: left;
+}
+/*鏍囬璁剧疆*/
+.nav .nav-img p{
+    margin: 0;
+    font-size: 24px;
+    display: inline-block;
+    color: white;
+    margin-top: 16px;
+    margin-left: 15px;
+    float:left;
+    font-family: "Microsoft YaHei";
+}
+
+/********************鍙宠竟鍖哄煙******************/
+.nav .right-part{
+    float: right;
+    width: 580px;
+}
+/*瀵艰埅鍖烘墍鏈夊垪琛�*/
+.nav ul{
+    margin:0;
+}
+.nav ul li{
+    display: inline-block;
+    color: white;
+    padding: 0;
+}
+
+/***********涓汉淇℃伅***********/
+.nav .first{
+    margin-top: 10px;
+    width: 450px;
+    margin-left: 300px;
+    font-family: "Microsoft YaHei";
+}
+/*涓汉淇℃伅鍒楄〃椤�*/
+.nav .imessage li{
+    margin-left: 8px;
+    padding-right: 15px;
+}
+/*涓汉淇℃伅鍒楄〃椤瑰彸杈规*/
+.nav .imessage .imessage-normal{
+    border-right: 1px solid white;
+}
+/*涓汉淇℃伅鐢ㄦ埛鍚�*/
+.nav #admin-name{
+    color: #f0e06c;
+}
+
+/***********瀵艰埅***********/
+.nav .nav-li{
+    margin-top: 30px;
+    margin-right: 50px;
+}
+/*瀵艰埅鍒楄〃椤�*/
+.nav .nav-li li{
+    width: 110px;
+    height: 40px;
+    text-align: center;
+
+}
+/*瀵艰埅閾炬帴*/
+.nav .nav-li a{
+    display: inline-block;
+    margin-left: 80px;
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+}
+.nav .nav-li a:link,.nav .nav-li a:visited{
+    text-decoration: none;
+    color:white;
+}
+.nav .nav-li a:hover{
+    background-color: rgba(46,120,130,0.8);
+}
+/*婵�娲荤姸鎬侊紙鍙姩鎬侀厤缃級*/
+.active{
+    background-color: rgba(46,120,130,0.8);
+}
+
+/********************娓呴櫎娴姩******************/
+.clr{
+    clear: both;
+}
